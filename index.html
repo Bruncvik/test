@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <article class="form_container">
         <form class="form" id="form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <div class="container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+            </div>
+            <div class="container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="adress@email.com">
+            </div>
+            <div class="container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <p id="warning" style="display: none;">Vyplňte všechna pole</p>
             <input type="submit" value="Submit">
         </form>
     </article>
     <script src="app.js"></script>
 </body>
+
 </html>
